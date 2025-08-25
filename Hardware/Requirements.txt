@@ -1,0 +1,9 @@
+I2C/SPI bus to be able connect more modules in the future
+Standardized connector to just connect every device in the tester (dont need to worry about how to connect TP)
+MUX for switching JLINK port on device 
+Externally ADC for measurement 
+possibility to connect multimeter to calibrate tester measurement
+Relays/Transistors/OC array for switching signals 
+Programmable gain of inputs ? 
+Temperature/Humidity sensor for calibration 
+Able to have some GPIO to be configured in the future  
