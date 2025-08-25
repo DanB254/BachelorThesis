@@ -1,0 +1,6 @@
+Tester/Developer mode. In developer mode you are able to rewrite the scripts.
+Easy to handle UI for testers.
+Download script from cloud, from pc, manual test options for testing 
+Web app
+Create testing document 
+Download script automatically from cloud using code od modules ? 
