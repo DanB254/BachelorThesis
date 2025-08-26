@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arduino konzole</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Web serial console</h1>
+
+    <form method="POST">
+        <input type="text" name="command" placeholder="Zadej příkaz">
+        <button type="submit">Odeslat</button>
+    </form>
+
+    {% if output %}
+        <p><b>Odpověď Arduina:</b> {{ output }}</p>
+    {% endif %}
+</body>
+</html>
