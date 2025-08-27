@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Arduino konzole</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>UniTest Board App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
-    <h1>Web serial console</h1>
+    <h1>UniTest Board App</h1>
 
-    <form method="POST">
-        <input type="text" name="command" placeholder="Zadej příkaz">
-        <button type="submit">Odeslat</button>
-    </form>
 
-    {% if output %}
-        <p><b>Odpověď Arduina:</b> {{ output }}</p>
-    {% endif %}
+    <p id="modeIndicator" class="tester">Tester Mode</p>
+
+    <div id="topRightButtons">
+        <div class="dropdown">
+            <button class="dropbtn">
+                <span>&#9776;</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#" id="themeButton">Darkmode</a>
+                <a href="#" id="modeButton">Mode</a>
+                <a href="#" id="helpButton">Help</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="output">
+        Messages for the current mode will appear here.
+    </div>
+
+    <!-- Flask static JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
+
 </html>
