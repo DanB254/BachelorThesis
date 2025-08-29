@@ -5,35 +5,13 @@
     <meta charset="UTF-8">
     <title>UniTest Board App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/Hardwario-logo.png') }}" type="image/png"> 
 </head>
 
 <body>
     <h1>UniTest Board App</h1>
+    <img src="{{ url_for('static', filename='img/Hardwario-logo.png') }}" alt="Hardwario logo">
 
-
-    <p id="modeIndicator" class="tester">Tester Mode</p>
-
-    <div id="topRightButtons">
-        <div class="dropdown">
-            <button class="dropbtn">
-                <span>&#9776;</span>
-            </button>
-            <div class="dropdown-content">
-                <a href="#" id="themeButton">Darkmode</a>
-                <a href="#" id="modeButton">Mode</a>
-                <a href="#" id="helpButton">Help</a>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div id="output">
-        Messages for the current mode will appear here.
-    </div>
-
-    <!-- Flask static JS -->
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
