@@ -1,4 +1,5 @@
-I2C/SPI bus to be able connect more modules in the future
+I2C for external modules
+SPI for onboard modules
 Standardized connector to just connect every device in the tester (dont need to worry about how to connect TP)
 MUX for switching JLINK port on device 
 Externally ADC for measurement 
@@ -7,3 +8,7 @@ Relays/Transistors/OC array for switching signals
 Programmable gain of inputs ? 
 Temperature/Humidity sensor for calibration 
 Able to have some GPIO to be configured in the future  
+
+HW:
+PI pico 2 (has managed power and flashing on the board)
+ 
