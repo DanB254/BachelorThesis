@@ -3,14 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>UniTest Board App</title>
+    <title>UniTest Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="icon" href="{{ url_for('static', filename='img/Hardwario-logo.png') }}" type="image/png"> 
+    <link rel="icon" href="{{ url_for('static', filename='img/Hardwario-logo.png') }}" type="image/png">
 </head>
 
 <body>
-    <h1>UniTest Board App</h1>
-    <img src="{{ url_for('static', filename='img/Hardwario-logo.png') }}" alt="Hardwario logo">
+    <h1>UniTest Dashboard</h1>
+    <img id="logo" src="{{ url_for('static', filename='img/Hardwario-logo.png') }}" alt="Hardwario logo">
+    <img id="Company" src="{{ url_for('static', filename='img/Company-name.png') }}" alt="Company name">
+    <div class="horizontal-line"></div>
+    <div id="clock">00:00:00</div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
 
