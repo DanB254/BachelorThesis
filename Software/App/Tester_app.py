@@ -20,14 +20,24 @@
 #   - UniTest Board - https://github.com/DanB254/BachelorThesis/tree/main/Hardware/Universal_Tester
 #   - Linux OS (for /dev/ttyUSB0 port)
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
+# počáteční stav slideru
+slider_state = "Test/Debug"
+
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", state=slider_state)
 
+@app.route("/slider_state", methods=["POST"])
+def slider_state_update():
+    global slider_state
+    data = request.get_json()
+    slider_state = data.get("state", "Test/Debug")
+    print("Slider state:", slider_state)
+    return jsonify({"status": "ok"})
 
 if __name__ == "__main__":
     app.run(debug=True)

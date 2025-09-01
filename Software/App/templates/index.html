@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>UniTest Dashboard</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='img/Hardwario-logo.png') }}" type="image/png">
+    <title>UniTest Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css') }}">
 </head>
 
 <body>
@@ -15,8 +16,17 @@
     <div class="horizontal-line"></div>
     <div id="clock">00:00:00</div>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- SLIDER -->
+    <div id="modeswitch" class="draggableswitch">
+        <label class="switch">
+            <input type="checkbox" id="testerToggle" {% if state=="Debug" %}checked{% endif %}>
+            <span class="slider"></span>
+             <span class="TestText">Test</span>
+            <span class="DebugText">Debug</span>
+        </label>
+    </div>
 
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
