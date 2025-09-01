@@ -2,9 +2,51 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid b4fc2485-daf0-4838-805a-f2c8e6577a31)
+	(uuid "b4fc2485-daf0-4838-805a-f2c8e6577a31")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 41.91 35.56)
+		(size 35.56 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "37d201ba-2ef8-4f52-87bc-86128b25068b")
+		(property "Sheetname" "MCU"
+			(at 41.91 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 41.91 48.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "UniTest Board"
+				(path "/b4fc2485-daf0-4838-805a-f2c8e6577a31"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
